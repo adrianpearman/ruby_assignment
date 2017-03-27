@@ -1,11 +1,11 @@
-puts "What is your name?"
-name = gets
-puts "Hello #{name}"
+puts "What is your nickname?"
+nickname = gets.chomp
+puts "Hello #{nickname}"
 
 puts "No but what is your real name"
-name1 = gets.chomp
-puts "Oh okay, sorry #{name1}"
+realname = gets.chomp
+puts "Oh okay, sorry #{realname}"
 
 puts "How old are you?"
-age = gets
-puts "#{age}, i didnt think you were that young"
+age = gets.chomp
+puts "#{realname} also known as #{nickname}you are #{age} years old, which means you were born in the year #{2017 - age.to_i}"
